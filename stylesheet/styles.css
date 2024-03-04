@@ -1,0 +1,38 @@
+:root {
+    --bodyHeight: 80vh;
+    --headerHeight: 15vh;
+    --footerHeight: 5vh;
+}
+
+* {
+    margin: 0;
+}
+
+
+body { 
+    display: grid;
+    grid-template-areas: 
+    'Header Header Header'
+    'Body Body Body'
+    'Body Body Body'
+    'Body Body Body'
+    'Footer Footer Footer';
+}
+
+#HEADER {
+    grid-area: Header;
+    background-color: red;
+    height: var(--headerHeight);
+}
+
+#BODY {
+    height: var(--bodyHeight);
+    grid-area: Body;
+    background-color: pink;
+}
+
+#FOOTER{
+    grid-area: Footer;
+    background-color: yellow;
+    height: var(--footerHeight)
+}
