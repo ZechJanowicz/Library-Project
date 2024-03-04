@@ -23,6 +23,7 @@ body {
     grid-area: Header;
     background-color: red;
     height: var(--headerHeight);
+    display: flex;
 }
 
 #BODY {
@@ -35,4 +36,36 @@ body {
     grid-area: Footer;
     background-color: yellow;
     height: var(--footerHeight)
+}
+
+.head-button-wrapper {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.login-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 10px;
+    width: 200px;
+    height: 100%;
+}
+
+.login-button {
+    background-color: yellow;
+    border-radius: 10px;
+    height: 50px;
+    width: 90px;
+}
+
+.book-button {
+    background-color: yellow;
+    border-radius: 10px;
+    height: 50px;
+    width: 90px;
 }
